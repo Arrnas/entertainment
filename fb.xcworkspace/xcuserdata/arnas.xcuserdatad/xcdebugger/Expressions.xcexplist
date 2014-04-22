@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "-[CRMotionView touchesBegan:withEvent:]:CRMotionView.m">
+      </ContextState>
+      <ContextState
+         contextName = "__35-[fbpageViewController getFbPhotos]_block_invoke:fbpageViewController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.backgroundImages">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[fbpageViewController downloadBackgroundImages]:fbpageViewController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "[self.backgroundImages objectAtIndex:downloadCount]">
+            </PersistentString>
+            <PersistentString
+               value = "self.backgroundImages">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>

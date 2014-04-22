@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "-[fbpageViewController viewDidLoad]:fbpageViewController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "_scrollView.contentSize">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[fbpageViewController handleTapFrom:]:fbpageViewController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "element">
+            </PersistentString>
+            <PersistentString
+               value = "[self.scrollView.subviews count]">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>
