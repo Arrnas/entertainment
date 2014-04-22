@@ -7,8 +7,13 @@
 //
 
 #import "ViewController.h"
+#import <FacebookSDK/FacebookSDK.h>
+#import "MWWindow.h"
+#import "fbpageViewController.h"
 
 @interface ViewController ()
+
+@property (nonatomic, strong) MWWindow *nextWindow;
 
 @end
 
@@ -17,13 +22,30 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    [[UIApplication sharedApplication] setStatusBarHidden:YES];
 	// Do any additional setup after loading the view, typically from a nib.
+    FBLoginView *loginView = [[FBLoginView alloc] init];
+    // Align the button in the center horizontally
+    loginView.frame = CGRectOffset(loginView.frame, (self.view.center.x - (loginView.frame.size.width / 2)), 150);
+    //loginView.readPermissions = @[@"basic_info", @"email", @"user_likes",@"rsvp_event"];
+    //loginView.publishPermissions = @[@"rsvp_event"];
+    [self.view addSubview:loginView];
+    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main_iPhone" bundle:nil];
+    fbpageViewController *myController = [storyboard instantiateViewControllerWithIdentifier:@"fbpageViewController"];
+    _nextWindow = [[MWWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+    _nextWindow.windowLevel = UIWindowLevelStatusBar;
+    _nextWindow.rootViewController = myController;
+    [_nextWindow makeKeyAndVisible];
+    [_nextWindow nextWindowLowered];
 }
 
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+- (IBAction)buttonHit:(id)sender {
+    //[self performSegueWithIdentifier:@"fbpage" sender:self];
 }
 
 @end

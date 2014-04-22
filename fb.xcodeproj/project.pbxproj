@@ -22,6 +22,12 @@
 		37A8C87018D79A160021DCB7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37A8C84F18D79A160021DCB7 /* UIKit.framework */; };
 		37A8C87818D79A160021DCB7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 37A8C87618D79A160021DCB7 /* InfoPlist.strings */; };
 		37A8C87A18D79A160021DCB7 /* fbTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 37A8C87918D79A160021DCB7 /* fbTests.m */; };
+		37A8C88418D79AEB0021DCB7 /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37A8C88318D79AEB0021DCB7 /* FacebookSDK.framework */; };
+		37AA87EB18ED745C00CC095C /* StoryView.m in Sources */ = {isa = PBXBuildFile; fileRef = 37AA87EA18ED745C00CC095C /* StoryView.m */; };
+		37AA87ED18EDBD6400CC095C /* flowa.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 37AA87EC18EDBD6400CC095C /* flowa.jpg */; };
+		37B4414E18DCA76C004A1981 /* fbpageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 37B4414D18DCA76C004A1981 /* fbpageViewController.m */; };
+		37E0BBB819065DBA00BD37DD /* MWWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 37E0BBB719065DBA00BD37DD /* MWWindow.m */; };
+		BEAB9304758347139733E27B /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D2F0384019AE4104A0EA9C0C /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +41,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		233B2ECB5F9340FABDBB8163 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 		37A8C84818D79A150021DCB7 /* fb.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = fb.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		37A8C84B18D79A150021DCB7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		37A8C84D18D79A160021DCB7 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -55,6 +62,15 @@
 		37A8C87518D79A160021DCB7 /* fbTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "fbTests-Info.plist"; sourceTree = "<group>"; };
 		37A8C87718D79A160021DCB7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		37A8C87918D79A160021DCB7 /* fbTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = fbTests.m; sourceTree = "<group>"; };
+		37A8C88318D79AEB0021DCB7 /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FacebookSDK.framework; sourceTree = "<group>"; };
+		37AA87E918ED745C00CC095C /* StoryView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StoryView.h; sourceTree = "<group>"; };
+		37AA87EA18ED745C00CC095C /* StoryView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StoryView.m; sourceTree = "<group>"; };
+		37AA87EC18EDBD6400CC095C /* flowa.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = flowa.jpg; sourceTree = "<group>"; };
+		37B4414C18DCA76C004A1981 /* fbpageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fbpageViewController.h; sourceTree = "<group>"; };
+		37B4414D18DCA76C004A1981 /* fbpageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = fbpageViewController.m; sourceTree = "<group>"; };
+		37E0BBB619065DBA00BD37DD /* MWWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MWWindow.h; sourceTree = "<group>"; };
+		37E0BBB719065DBA00BD37DD /* MWWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MWWindow.m; sourceTree = "<group>"; };
+		D2F0384019AE4104A0EA9C0C /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,8 +79,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				37A8C84E18D79A160021DCB7 /* CoreGraphics.framework in Frameworks */,
+				37A8C88418D79AEB0021DCB7 /* FacebookSDK.framework in Frameworks */,
 				37A8C85018D79A160021DCB7 /* UIKit.framework in Frameworks */,
 				37A8C84C18D79A150021DCB7 /* Foundation.framework in Frameworks */,
+				BEAB9304758347139733E27B /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -88,6 +106,7 @@
 				37A8C87318D79A160021DCB7 /* fbTests */,
 				37A8C84A18D79A150021DCB7 /* Frameworks */,
 				37A8C84918D79A150021DCB7 /* Products */,
+				233B2ECB5F9340FABDBB8163 /* Pods.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -103,10 +122,12 @@
 		37A8C84A18D79A150021DCB7 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				37A8C88318D79AEB0021DCB7 /* FacebookSDK.framework */,
 				37A8C84B18D79A150021DCB7 /* Foundation.framework */,
 				37A8C84D18D79A160021DCB7 /* CoreGraphics.framework */,
 				37A8C84F18D79A160021DCB7 /* UIKit.framework */,
 				37A8C86D18D79A160021DCB7 /* XCTest.framework */,
+				D2F0384019AE4104A0EA9C0C /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -114,6 +135,8 @@
 		37A8C85118D79A160021DCB7 /* fb */ = {
 			isa = PBXGroup;
 			children = (
+				37E0BBB619065DBA00BD37DD /* MWWindow.h */,
+				37E0BBB719065DBA00BD37DD /* MWWindow.m */,
 				37A8C85A18D79A160021DCB7 /* AppDelegate.h */,
 				37A8C85B18D79A160021DCB7 /* AppDelegate.m */,
 				37A8C85D18D79A160021DCB7 /* Main_iPhone.storyboard */,
@@ -122,6 +145,10 @@
 				37A8C86418D79A160021DCB7 /* ViewController.m */,
 				37A8C86618D79A160021DCB7 /* Images.xcassets */,
 				37A8C85218D79A160021DCB7 /* Supporting Files */,
+				37B4414C18DCA76C004A1981 /* fbpageViewController.h */,
+				37B4414D18DCA76C004A1981 /* fbpageViewController.m */,
+				37AA87E918ED745C00CC095C /* StoryView.h */,
+				37AA87EA18ED745C00CC095C /* StoryView.m */,
 			);
 			path = fb;
 			sourceTree = "<group>";
@@ -129,6 +156,7 @@
 		37A8C85218D79A160021DCB7 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				37AA87EC18EDBD6400CC095C /* flowa.jpg */,
 				37A8C85318D79A160021DCB7 /* fb-Info.plist */,
 				37A8C85418D79A160021DCB7 /* InfoPlist.strings */,
 				37A8C85718D79A160021DCB7 /* main.m */,
@@ -162,9 +190,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 37A8C87D18D79A160021DCB7 /* Build configuration list for PBXNativeTarget "fb" */;
 			buildPhases = (
+				DA72D821093643BBB1B85BC1 /* Check Pods Manifest.lock */,
 				37A8C84418D79A150021DCB7 /* Sources */,
 				37A8C84518D79A150021DCB7 /* Frameworks */,
 				37A8C84618D79A150021DCB7 /* Resources */,
+				BF8B5D40B7244CAEB55B6260 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -233,6 +263,7 @@
 			files = (
 				37A8C86218D79A160021DCB7 /* Main_iPad.storyboard in Resources */,
 				37A8C86718D79A160021DCB7 /* Images.xcassets in Resources */,
+				37AA87ED18EDBD6400CC095C /* flowa.jpg in Resources */,
 				37A8C85F18D79A160021DCB7 /* Main_iPhone.storyboard in Resources */,
 				37A8C85618D79A160021DCB7 /* InfoPlist.strings in Resources */,
 			);
@@ -248,12 +279,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		BF8B5D40B7244CAEB55B6260 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DA72D821093643BBB1B85BC1 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		37A8C84418D79A150021DCB7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				37A8C86518D79A160021DCB7 /* ViewController.m in Sources */,
+				37E0BBB819065DBA00BD37DD /* MWWindow.m in Sources */,
+				37AA87EB18ED745C00CC095C /* StoryView.m in Sources */,
+				37B4414E18DCA76C004A1981 /* fbpageViewController.m in Sources */,
 				37A8C85C18D79A160021DCB7 /* AppDelegate.m in Sources */,
 				37A8C85818D79A160021DCB7 /* main.m in Sources */,
 			);
@@ -387,26 +454,42 @@
 		};
 		37A8C87E18D79A160021DCB7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 233B2ECB5F9340FABDBB8163 /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: GLUDIS MB (9EUN2SH5FF)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "fb/fb-Prefix.pch";
 				INFOPLIST_FILE = "fb/fb-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "FD29A06C-A99C-4AF6-ADC5-3E853295E6B4";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
 		};
 		37A8C87F18D79A160021DCB7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 233B2ECB5F9340FABDBB8163 /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: GLUDIS MB (9EUN2SH5FF)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "fb/fb-Prefix.pch";
 				INFOPLIST_FILE = "fb/fb-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "FD29A06C-A99C-4AF6-ADC5-3E853295E6B4";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -470,6 +553,7 @@
 				37A8C87F18D79A160021DCB7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		37A8C88018D79A160021DCB7 /* Build configuration list for PBXNativeTarget "fbTests" */ = {
 			isa = XCConfigurationList;
@@ -478,6 +562,7 @@
 				37A8C88218D79A160021DCB7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
