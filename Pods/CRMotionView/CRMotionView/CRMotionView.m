@@ -168,7 +168,7 @@ static const CGFloat CRMotionViewRotationFactor = 4.0f;
 {
     touched = YES;
     [touches anyObject];
-    [self.parent nextImage];
+    [self.parent imageTapped];
 }
 
 - (void) touchesMoved:(NSSet *)touches withEvent:(UIEvent *)event

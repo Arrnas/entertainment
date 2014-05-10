@@ -25,6 +25,9 @@
 		37A8C88418D79AEB0021DCB7 /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37A8C88318D79AEB0021DCB7 /* FacebookSDK.framework */; };
 		37AA87EB18ED745C00CC095C /* StoryView.m in Sources */ = {isa = PBXBuildFile; fileRef = 37AA87EA18ED745C00CC095C /* StoryView.m */; };
 		37AA87ED18EDBD6400CC095C /* flowa.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 37AA87EC18EDBD6400CC095C /* flowa.jpg */; };
+		37B1F90D1918098500E7803C /* RECommonFunctions.m in Sources */ = {isa = PBXBuildFile; fileRef = 37B1F9081918098500E7803C /* RECommonFunctions.m */; };
+		37B1F90E1918098500E7803C /* RESideMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 37B1F90A1918098500E7803C /* RESideMenu.m */; };
+		37B1F90F1918098500E7803C /* UIViewController+RESideMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 37B1F90C1918098500E7803C /* UIViewController+RESideMenu.m */; };
 		37B4414E18DCA76C004A1981 /* fbpageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 37B4414D18DCA76C004A1981 /* fbpageViewController.m */; };
 		37E0BBB819065DBA00BD37DD /* MWWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 37E0BBB719065DBA00BD37DD /* MWWindow.m */; };
 		BEAB9304758347139733E27B /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D2F0384019AE4104A0EA9C0C /* libPods.a */; };
@@ -66,6 +69,12 @@
 		37AA87E918ED745C00CC095C /* StoryView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StoryView.h; sourceTree = "<group>"; };
 		37AA87EA18ED745C00CC095C /* StoryView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StoryView.m; sourceTree = "<group>"; };
 		37AA87EC18EDBD6400CC095C /* flowa.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = flowa.jpg; sourceTree = "<group>"; };
+		37B1F9071918098500E7803C /* RECommonFunctions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RECommonFunctions.h; sourceTree = "<group>"; };
+		37B1F9081918098500E7803C /* RECommonFunctions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RECommonFunctions.m; sourceTree = "<group>"; };
+		37B1F9091918098500E7803C /* RESideMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RESideMenu.h; sourceTree = "<group>"; };
+		37B1F90A1918098500E7803C /* RESideMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RESideMenu.m; sourceTree = "<group>"; };
+		37B1F90B1918098500E7803C /* UIViewController+RESideMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+RESideMenu.h"; sourceTree = "<group>"; };
+		37B1F90C1918098500E7803C /* UIViewController+RESideMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+RESideMenu.m"; sourceTree = "<group>"; };
 		37B4414C18DCA76C004A1981 /* fbpageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fbpageViewController.h; sourceTree = "<group>"; };
 		37B4414D18DCA76C004A1981 /* fbpageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = fbpageViewController.m; sourceTree = "<group>"; };
 		37E0BBB619065DBA00BD37DD /* MWWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MWWindow.h; sourceTree = "<group>"; };
@@ -135,6 +144,7 @@
 		37A8C85118D79A160021DCB7 /* fb */ = {
 			isa = PBXGroup;
 			children = (
+				37B1F9061918098500E7803C /* RESideMenu */,
 				37E0BBB619065DBA00BD37DD /* MWWindow.h */,
 				37E0BBB719065DBA00BD37DD /* MWWindow.m */,
 				37A8C85A18D79A160021DCB7 /* AppDelegate.h */,
@@ -181,6 +191,19 @@
 				37A8C87618D79A160021DCB7 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		37B1F9061918098500E7803C /* RESideMenu */ = {
+			isa = PBXGroup;
+			children = (
+				37B1F9071918098500E7803C /* RECommonFunctions.h */,
+				37B1F9081918098500E7803C /* RECommonFunctions.m */,
+				37B1F9091918098500E7803C /* RESideMenu.h */,
+				37B1F90A1918098500E7803C /* RESideMenu.m */,
+				37B1F90B1918098500E7803C /* UIViewController+RESideMenu.h */,
+				37B1F90C1918098500E7803C /* UIViewController+RESideMenu.m */,
+			);
+			path = RESideMenu;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -317,12 +340,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				37B1F90E1918098500E7803C /* RESideMenu.m in Sources */,
 				37A8C86518D79A160021DCB7 /* ViewController.m in Sources */,
 				37E0BBB819065DBA00BD37DD /* MWWindow.m in Sources */,
 				37AA87EB18ED745C00CC095C /* StoryView.m in Sources */,
 				37B4414E18DCA76C004A1981 /* fbpageViewController.m in Sources */,
 				37A8C85C18D79A160021DCB7 /* AppDelegate.m in Sources */,
 				37A8C85818D79A160021DCB7 /* main.m in Sources */,
+				37B1F90D1918098500E7803C /* RECommonFunctions.m in Sources */,
+				37B1F90F1918098500E7803C /* UIViewController+RESideMenu.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -12,4 +12,5 @@
 @property (strong, nonatomic) IBOutlet UIScrollView *scrollView;
 @property NSMutableArray *backgroundImages;
 -(void) nextImage;
+-(void) imageTapped;
 @end

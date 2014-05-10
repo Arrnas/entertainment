@@ -3,7 +3,15 @@
    version = "1.0">
    <ContextStates>
       <ContextState
-         contextName = "-[CRMotionView touchesBegan:withEvent:]:CRMotionView.m">
+         contextName = "-[fbpageViewController downloadBackgroundImages]:fbpageViewController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "[self.backgroundImages objectAtIndex:downloadCount]">
+            </PersistentString>
+            <PersistentString
+               value = "self.backgroundImages">
+            </PersistentString>
+         </PersistentStrings>
       </ContextState>
       <ContextState
          contextName = "__35-[fbpageViewController getFbPhotos]_block_invoke:fbpageViewController.m">
@@ -14,15 +22,15 @@
          </PersistentStrings>
       </ContextState>
       <ContextState
-         contextName = "-[fbpageViewController downloadBackgroundImages]:fbpageViewController.m">
+         contextName = "-[ViewController awakeFromNib]:ViewController.m">
          <PersistentStrings>
             <PersistentString
-               value = "[self.backgroundImages objectAtIndex:downloadCount]">
-            </PersistentString>
-            <PersistentString
-               value = "self.backgroundImages">
+               value = "self.backgroundImage">
             </PersistentString>
          </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[CRMotionView touchesBegan:withEvent:]:CRMotionView.m">
       </ContextState>
    </ContextStates>
 </VariablesViewState>

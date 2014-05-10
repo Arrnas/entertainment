@@ -16,7 +16,7 @@
 
 @end
 static int SCROLL_HEIGHT_MINIMIZED = 225;
-static char *pageID = "202499019787537";
+static char *pageID = "648636591840442";//"202499019787537";
 static float PHOTO_REFRESH_TIME = 10.0f;
 @implementation fbpageViewController
 {
@@ -26,6 +26,7 @@ static float PHOTO_REFRESH_TIME = 10.0f;
     CRMotionView *motionView;
     BOOL imageLock;
     NSString *fbDataString;
+    BOOL scrollHidden;
 }
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
@@ -36,6 +37,7 @@ static float PHOTO_REFRESH_TIME = 10.0f;
         _scrollView.showsVerticalScrollIndicator = YES;
         _scrollView.showsHorizontalScrollIndicator = YES;
         open = NO;
+        scrollHidden = NO;
         downloadCount = 0;
     }
     return self;
@@ -73,6 +75,26 @@ static float PHOTO_REFRESH_TIME = 10.0f;
         imageLock = YES;
         [self downloadBackgroundImages];
     }
+}
+-(void) imageTapped
+{
+    int scrollHeight;
+    CGRect frame = _scrollView.frame;
+    if(scrollHidden == NO)
+    {
+        scrollHeight = self.view.frame.size.height;
+    }
+    else
+    {
+        scrollHeight = self.view.frame.size.height - SCROLL_HEIGHT_MINIMIZED;
+    }
+    frame.origin.y = scrollHeight;
+    [UIView beginAnimations:nil context:NULL];
+    [UIView setAnimationDuration:0.3];
+    self.scrollView.frame = frame;
+    [UIView commitAnimations];
+    scrollHidden = scrollHidden ? NO : YES;
+
 }
 -(void) downloadBackgroundImages
 {

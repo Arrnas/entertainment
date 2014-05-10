@@ -19,13 +19,16 @@ PODS:
     - AFNetworking/NSURLConnection
     - AFNetworking/NSURLSession
   - CRMotionView (0.3)
+  - pop (1.0.2)
 
 DEPENDENCIES:
   - AFNetworking (~> 2.0)
   - CRMotionView
+  - pop
 
 SPEC CHECKSUMS:
   AFNetworking: 0121f4b69be3fa58d1ab317866e036e12ac9651d
   CRMotionView: 772863d59bfd672e055fe300f089d8c9dd33593a
+  pop: 55f6c972fbfb644dfcf1bd6892d001feaa32cc38
 
-COCOAPODS: 0.29.0
+COCOAPODS: 0.32.1
